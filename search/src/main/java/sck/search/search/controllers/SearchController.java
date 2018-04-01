@@ -1,11 +1,13 @@
 package sck.search.search.controllers;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.*;
 import org.springframework.web.bind.annotation.*;
+import java.util.*;
+
+import sck.search.search.models.Product;
 
 @CrossOrigin(origins = "*")
 @RestController
-@ResponseBody
 public class SearchController {
     
     @Autowired    
@@ -13,8 +15,8 @@ public class SearchController {
 
     }
 
-    @RequestMapping(value = "search/products", method = RequestMethod.GET)
-    public String search(@RequestBody String bodyString) throws Exception {
-        return "search";
+    @GetMapping("search/products")
+    public ArrayList<Product> search(@RequestParam("q") String keyword) throws Exception {
+        return new ArrayList();
     }
 }
