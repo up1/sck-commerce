@@ -1,3 +1,5 @@
+package hello;
+
 import static org.junit.Assert.*;
 
 import org.junit.Ignore;
@@ -5,12 +7,12 @@ import org.junit.Ignore;
 
 import hello.ProductRepository;
 
-public class Test{
+public class Test {
 
-private ProductRepository repository;
+    private ProductRepository repository;
 
-    @Test
+    @org.junit.Test
     public void testMethod() {
-        System.out.println("repositoryd: " + repository);
+        assertTrue(true);
     }
 }
