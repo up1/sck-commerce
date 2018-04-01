@@ -1,0 +1,9 @@
+.Cell>div {
+  padding: 5px;
+  text-align: center;
+}
+
+.Cell>div>img {
+  width: calc(100% - 110px);
+  height: 150px;
+}
