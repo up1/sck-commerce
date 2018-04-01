@@ -1,0 +1,67 @@
+﻿<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-10 col-md-offset-1">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>รายการ</th>
+                        <th>จำนวน</th>
+                        <th class="text-center">&nbsp;</th>
+                        <th class="text-center">ราคา</th>
+	       <th class="text-center">&nbsp;สรุปรายการสั่งซื้อ</th>
+                        
+                    </tr>
+                </thead>
+                <tbody> 
+                    <tr>
+                        <td class="col-md-6">
+                        <div class="media">
+                            <a class="thumbnail pull-left" href="#"> <img id="imgProduct" class="media-object" src="http://icons.iconarchive.com/icons/custom-icon-design/flatastic-2/72/product-icon.png" style="width: 72px; height: 72px;"> </a>
+                            <div class="media-body">
+                                <h4 class="media-heading"><label id="lblProductName">&nbsp;Product Name</label></h4>
+                                <h5 class="media-heading"> by <label id="lblProductBrand">&nbsp;Brand</label></h5> 
+	              <span>&nbsp;<label id="lblProductDetail1">&nbsp;กางเกงยีนส์ขาด</label></span>
+		<br>
+	              <span>&nbsp;<label id="lblProductDetail1">&nbsp;ทรงเข้ารูป COLLA BLUE</label></span>
+                            </div>
+                        </div></td>
+                        <td class="col-md-1" style="text-align: center">
+                        <input type="text" class="form-control" id="ProductQty" value="1">
+                        </td>
+	     <td class="col-md-1"> &nbsp;
+                       </td>
+                     
+                        <td class="col-md-1 text-center"><strong><label id="lblTotalPrice">1799.00</label></strong></td>
+                      <td class="col-md-2 text-center"><strong>ยอด ฿ &nbsp;<label id="lblProductPrice">1799.00</label></strong>
+		<br><strong>ค่าจัดส่ง ฿ &nbsp;<label id="lblProductPrice">39.00</label></strong>
+		</td>
+                       
+                    </tr> 
+                    <tr>
+                        <td>&nbsp; </td>
+                        <td> &nbsp;</td>
+                        <td> &nbsp;</td>
+                        <td><h3>รวม</h3></td>
+                        <td class="text-right"><h3><strong><label id="lblTotalPrice">1838.00</label></strong></h3></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp; </td>
+                        <td> &nbsp;</td>
+                        <td> &nbsp;</td>
+                        <td>
+                       &nbsp;</td>
+                        <td>
+                        <button type="button" class="btn btn-success">
+                            ดำเนินการชำระเงิน <span class="glyphicon glyphicon-play"></span>
+                        </button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
