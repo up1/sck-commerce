@@ -48,7 +48,7 @@ public class Product {
         this.brand = brand;
     }
 
-    public String getRating(){
+    public int getRating(){
         return rating;
     }
 
