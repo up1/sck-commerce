@@ -1,0 +1,11 @@
+<Context >
+<Resource name="jdbc/almds"
+            auth="Container"
+            type="javax.sql.DataSource"
+            username="scott"
+            password="tiger"
+            driverClassName="oracle.jdbc.OracleDriver"
+            url="jdbc:oracle:thin:@127.0.0.1:1521:mysid"
+            maxActive="8"
+            maxIdle="4"/>
+ </Context>
