@@ -1,6 +1,12 @@
 package sck.search.search.models;
+import org.springframework.data.elasticsearch.annotations.Document;
+import org.springframework.data.annotation.*;
 
+@Document(indexName = "sck_lazada", type = "products")
 public class Product {
+
+    @Id
+    private String id;
     private String productId;
     private double price;
     private String name;
